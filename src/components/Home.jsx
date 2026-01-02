@@ -135,9 +135,7 @@ const Home = () => {
                 </div>
             </section>
 
-            {/* Spacer for the overlapping cards */}
-            <div style={{ height: '120px' }} className="d-none d-md-block"></div>
-            <div style={{ height: '450px' }} className="d-block d-md-none"></div>
+          
 
             {/* Who We Are */}
             <section className="section-padding text-center overflow-hidden" id="who-we-are">
