@@ -6,7 +6,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import '../assets/style/style.css';
 
-import heroBg from '../assets/images/hero_bg.png';
+import heroBg1 from '../assets/images/hero_bg1.png'
 import plant1 from '../assets/images/plant_1.png';
 import plant2 from '../assets/images/plant_2.png';
 import plant3 from '../assets/images/plant_3.png';
@@ -70,7 +70,7 @@ const WhatWeDo = () => {
             <header className="what-we-do-hero-section py-4">
                 <div className="container">
                     <div className="overflow-hidden position-relative" style={{ minHeight: '650px', borderRadius: '40px' }}>
-                        <div className="position-absolute top-0 start-0 w-100 h-100" style={{ backgroundImage: `url(${heroBg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+                        <div className="position-absolute top-0 start-0 w-100 h-100" style={{ backgroundImage: `url(${heroBg1})`, backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
                         <div className="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-10"></div> {/* Subtle overlay for text readability if needed */}
                         <div className="position-relative z-1 h-100 d-flex flex-column justify-content-center align-items-center text-center">
                             <h1 className="display-3 fw-bold text-white mb-0" style={{ textShadow: '0 2px 20px rgba(0,0,0,0.5)', lineHeight: '1.2' }}>E-Waste<br />Recycling</h1>
