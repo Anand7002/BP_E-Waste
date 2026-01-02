@@ -1,0 +1,396 @@
+/* Google Fonts Import - optional but recommended for better typography */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --primary-green: #4CAF50;
+    --dark-green: #2E7D32;
+    --text-dark: #212529;
+    --text-light: #6c757d;
+    --bg-cream: #f9f7f0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-dark);
+}
+
+.home-container {
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar-brand img {
+    height: 40px;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: var(--text-dark) !important;
+}
+
+.nav-link.active {
+    color: var(--primary-green) !important;
+}
+
+/* Hero Section */
+.hero-wrapper {
+    background-color: #fff;
+    padding-top: 20px;
+}
+
+.hero-rounded-container {
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Floating Stats */
+.hero-rounded-container .row .col-lg-3 .bg-white {
+    transition: transform 0.3s ease;
+}
+
+.hero-rounded-container .row .col-lg-3 .bg-white:hover {
+    transform: translateY(-5px);
+}
+
+/* Common Section Padding */
+.section-padding {
+    padding: 80px 0;
+}
+
+/* Who We Are Diagram */
+.diagram-label-left {
+    right: 90%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 15px;
+    width: 250px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.diagram-label-right {
+    left: 90%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 15px;
+    width: 250px;
+    align-items: center;
+}
+
+.horizontal-line-right {
+    height: 2px;
+    width: 40px;
+    background-color: #adb5bd;
+    margin-left: 15px;
+}
+
+.horizontal-line-left {
+    height: 2px;
+    width: 40px;
+    background-color: #adb5bd;
+    margin-right: 15px;
+}
+
+.vertical-line {
+    width: 2px;
+    height: 30px;
+    background-color: #adb5bd;
+}
+
+
+/* Service Highlights */
+.service-icon-box {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+}
+
+.service-icon-box:hover {
+    background-color: var(--primary-green);
+    color: #fff;
+    /* If using font icons, this would change color */
+}
+
+.service-img-card {
+    overflow: hidden;
+}
+
+.service-img-card img {
+    transition: transform 0.5s ease;
+}
+
+.service-img-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Why Choose Us */
+.choice-card {
+    background: #fff;
+    transition: all 0.3s ease;
+}
+
+.choice-card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+    transform: translateY(-3px);
+}
+
+/* Footer Section */
+.footer-container {
+    background-color: #5c9c44 !important;
+    /* Specific green from image */
+}
+
+.social-icon-circle {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 1.2rem;
+}
+
+.social-icon-circle:hover {
+    background-color: #fff;
+    color: #5c9c44;
+}
+
+.footer-links i {
+    font-size: 1.1rem;
+}
+
+.placeholder-white::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Newsletter Custom Input */
+.custom-newsletter-input {
+    background-color: rgba(46, 125, 50, 0.4) !important;
+    /* Darker semi-transparent green */
+    color: #2e5a27 !important;
+    /* Dark green text */
+    font-weight: 500;
+}
+
+.custom-newsletter-input::placeholder {
+    color: #2e5a27 !important;
+    opacity: 0.7;
+}
+
+.custom-newsletter-input:focus {
+    background-color: rgba(46, 125, 50, 0.5) !important;
+    box-shadow: none;
+}
+
+/* Awareness Drive Section Custom Styles */
+.rounded-custom {
+    border-radius: 40px !important;
+}
+
+.stat-box-green {
+    background-color: #5c9c44 !important;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.awareness-title {
+    font-size: 3rem;
+    line-height: 1.1;
+    color: #212529;
+    letter-spacing: -1px;
+}
+
+.awareness-divider {
+    width: 80px;
+    height: 3px;
+    background-color: #b0bec5;
+    margin-bottom: 2rem;
+}
+
+/* =========================================
+   RESPONSIVE MEDIA QUERIES
+   ========================================= */
+
+/* Large Devices (Desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    .diagram-label-left {
+        width: 200px;
+        right: 85%;
+    }
+
+    .diagram-label-right {
+        width: 200px;
+        left: 85%;
+    }
+
+    .hero-rounded-container h1 {
+        font-size: 3rem;
+    }
+}
+
+/* Medium Devices (Tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+    /* Navbar */
+    .navbar-collapse {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        margin-top: 15px;
+        z-index: 1000;
+    }
+
+    /* Hide the complex hover tooltip on mobile/tablet for cleaner UX */
+    .nav-item.position-relative .d-flex.flex-column.position-absolute {
+        display: none !important;
+    }
+
+    /* Hero Section */
+    .hero-rounded-container {
+        min-height: auto !important;
+        padding: 60px 20px !important;
+        text-align: center;
+        background-position: left center !important;
+        /* Align background to left/center for mobile */
+    }
+
+    .hero-rounded-container .row {
+        justify-content: center;
+    }
+
+    .hero-rounded-container .col-lg-7 {
+        padding-left: 0 !important;
+        /* Override ps-lg-5 */
+    }
+
+    /* Floating Stats - Reset position for mobile flow */
+    .hero-wrapper .container.position-absolute {
+        position: static !important;
+        transform: none !important;
+        margin-top: 30px;
+        margin-bottom: 0px;
+    }
+
+    /* Who We Are Diagram - Stack vertically */
+    .who-we-are-diagram {
+        min-height: auto !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .diagram-label-left,
+    .diagram-label-right {
+        position: static;
+        width: 100%;
+        max-width: 300px;
+        transform: none;
+        margin: 15px 0 !important;
+        /* Ensure vertical gap */
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .diagram-label-left p,
+    .diagram-label-right p {
+        text-align: center !important;
+        /* Force center alignment for text in diagram */
+    }
+
+    .horizontal-line-left,
+    .horizontal-line-right {
+        display: none;
+    }
+
+    /* Awareness Section */
+    .awareness-title {
+        font-size: 2.5rem;
+    }
+
+    /* Testimonial */
+    .section-padding {
+        padding: 50px 0;
+    }
+}
+
+/* Small Devices (Landscape Phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .hero-rounded-container h1 {
+        font-size: 2.2rem;
+    }
+
+    /* Adjust padding for small screens */
+    .section-padding {
+        padding: 40px 0;
+    }
+
+    .awareness-title {
+        font-size: 2rem;
+    }
+}
+
+/* Extra Small Devices (Portrait Phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .navbar-brand img {
+        height: 35px;
+    }
+
+    .hero-rounded-container {
+        border-radius: 20px !important;
+        padding: 40px 15px !important;
+    }
+
+    .hero-rounded-container .overlay {
+        border-radius: 20px !important;
+    }
+
+    .display-5 {
+        font-size: 2rem;
+    }
+
+    .display-3 {
+        font-size: 2rem;
+    }
+
+    /* Newsletter Fixes for Mobile */
+    .newsletter-box .position-relative {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .newsletter-box input.form-control {
+        padding-right: 15px !important;
+        width: 100%;
+    }
+
+    .newsletter-box button {
+        position: static !important;
+        transform: none !important;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .newsletter-box i.bi-envelope {
+        top: 25px !important;
+        /* Adjust icon position relative to stacked input */
+    }
+}
